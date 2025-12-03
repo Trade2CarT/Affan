@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MapPin, Mail, Menu, X, Star, ChevronRight, MessageCircle, ExternalLink, Image as ImageIcon, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Phone, MapPin, Menu, X, Star, ChevronRight, MessageCircle, ExternalLink, Image as ImageIcon, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 // --- TYPES ---
 interface Product {
@@ -252,7 +252,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 bg-slate-900/80 backdrop-blur-sm transition-all" onClick={onClose}>
       <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] overflow-hidden flex flex-col md:flex-row animate-in fade-in zoom-in-95 duration-200 ring-1 ring-slate-900/5"
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] overflow-y-auto md:overflow-hidden flex flex-col md:flex-row animate-in fade-in zoom-in-95 duration-200 ring-1 ring-slate-900/5"
         onClick={e => e.stopPropagation()}
       >
         {/* Mobile Header with Close */}
@@ -264,8 +264,8 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
         </div>
 
         {/* Left: Image Gallery */}
-        <div className="w-full md:w-1/2 bg-slate-50 p-6 flex flex-col justify-between">
-          <div className="relative w-full aspect-square bg-white rounded-xl shadow-sm border border-slate-100 mb-4 overflow-hidden group">
+        <div className="w-full md:w-1/2 bg-slate-50 p-6 flex flex-col justify-between shrink-0">
+          <div className="relative w-full h-72 md:h-auto md:aspect-square bg-white rounded-xl shadow-sm border border-slate-100 mb-4 overflow-hidden group">
             <img
               src={product.images[activeImage]}
               alt={product.name}
@@ -277,7 +277,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
               </span>
             </div>
           </div>
-          <div className="flex space-x-3 overflow-x-auto w-full pb-2 scrollbar-hide">
+          <div className="flex space-x-3 overflow-x-auto w-fullqh pb-2 scrollbar-hide">
             {product.images.map((img, idx) => (
               <button
                 key={idx}
@@ -292,7 +292,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
         </div>
 
         {/* Right: Details */}
-        <div className="w-full md:w-1/2 p-6 md:p-10 overflow-y-auto bg-white flex flex-col relative custom-scrollbar">
+        <div className="w-full md:w-1/2 p-6 md:p-10 md:overflow-y-auto bg-white flex flex-col relative custom-scrollbar">
           <button onClick={onClose} className="hidden md:block absolute top-6 right-6 text-slate-400 hover:text-red-600 transition bg-slate-50 p-2 rounded-full hover:bg-red-50">
             <X size={24} />
           </button>
