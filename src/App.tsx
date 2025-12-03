@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MapPin, Menu, X, Star, ChevronRight, MessageCircle, ExternalLink, Image as ImageIcon, ArrowRight, CheckCircle2 } from 'lucide-reactn';
-
+import { Phone, MapPin, Menu, X, Star, ChevronRight, MessageCircle, ExternalLink, Image as ImageIcon, ArrowRight, CheckCircle2 } from 'lucide-react';
 // --- TYPES ---
 interface Product {
   id: number;
