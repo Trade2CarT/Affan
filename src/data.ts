@@ -1,5 +1,5 @@
 // src/data.ts
-import { Product } from './types';
+import type { Product } from './types';
 
 export const PRODUCTS: Product[] = [
     {

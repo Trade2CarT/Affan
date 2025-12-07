@@ -1,7 +1,7 @@
 // src/components/ProductCard.tsx
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Product } from '../types';
+import type { Product } from '../types';
 
 interface ProductCardProps {
     product: Product;

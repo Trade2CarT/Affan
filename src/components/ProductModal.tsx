@@ -1,7 +1,7 @@
 // src/components/ProductModal.tsx
 import React, { useState } from 'react';
 import { X, CheckCircle2, Star, ExternalLink, MessageCircle } from 'lucide-react';
-import { Product } from '../types'
+import type { Product } from '../types'
 
 interface ProductModalProps {
     product: Product;

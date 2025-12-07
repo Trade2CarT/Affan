@@ -7,7 +7,7 @@ import ProductCard from './components/ProductCard';
 import ProductModal from './components/ProductModal';
 import Footer from './components/Footer';
 import { PRODUCTS } from './data';
-import { Product } from './types';
+import type  { Product } from './types';
 import './App.css';
 
 const App: React.FC = () => {
