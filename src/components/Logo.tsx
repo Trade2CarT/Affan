@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ className, ...props }) => {
             className={className}
             {...props}
         >
-            {/* Outer border */}
+            {/* Outer border ring */}
             <ellipse
                 cx="300"
                 cy="160"
@@ -24,11 +24,23 @@ const Logo: React.FC<LogoProps> = ({ className, ...props }) => {
                 strokeWidth="2"
             />
 
-            {/* White background layer */}
-            <ellipse cx="300" cy="160" rx="285" ry="148" fill="white" />
+            {/* White spacing layer */}
+            <ellipse
+                cx="300"
+                cy="160"
+                rx="285"
+                ry="148"
+                fill="white"
+            />
 
-            {/* Dark inner oval */}
-            <ellipse cx="300" cy="160" rx="275" ry="140" fill="#1a1a1a" />
+            {/* Dark inner background */}
+            <ellipse
+                cx="300"
+                cy="160"
+                rx="275"
+                ry="140"
+                fill="#1a1a1a"
+            />
 
             {/* Left 'A' */}
             <path
