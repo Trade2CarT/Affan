@@ -1,13 +1,17 @@
 // src/components/Footer.tsx
 import React from 'react';
 import { ChevronRight, MapPin, Phone } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer: React.FC = () => (
     <footer className="bg-slate-900 text-slate-300 pt-20 pb-10 border-t border-slate-800" id="contact">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div>
                 <div className="flex items-center space-x-2 mb-6">
-                    <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center font-bold text-white">AA</div>
+                    {/* Replaced Placeholder with Logo */}
+                    <div className="w-12 h-auto">
+                        <Logo className="w-full h-full" />
+                    </div>
                     <h3 className="text-white text-xl font-bold">Affan Associates</h3>
                 </div>
                 <p className="text-slate-400 text-sm mb-6 leading-relaxed">

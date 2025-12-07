@@ -1,6 +1,7 @@
 // src/components/Header.tsx
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -19,9 +20,9 @@ const Header: React.FC = () => {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center space-x-3 group cursor-pointer">
-                    {/* Logo Placeholder */}
-                    <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center font-bold text-xl text-white shadow-lg group-hover:scale-105 transition-transform">
-                        AA
+                    {/* Replaced Placeholder with Logo Component */}
+                    <div className="w-16 h-auto transition-transform group-hover:scale-105">
+                        <Logo className="w-full h-full" />
                     </div>
                     <div>
                         <h1 className="text-xl font-bold leading-tight text-white tracking-tight">Affan Associates</h1>
