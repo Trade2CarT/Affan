@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
         id: 2,
         name: "Honda Bike Stand Bush Cover",
         category: "Bike Accessories",
-        moq: 1000,
+        moq: 100,
         price: "₹45.00 / pc",
         description: "Heavy-duty rubber stand bush cover designed specifically for Honda motorcycles. Prevents floor scratches, reduces noise, and provides a stable grip. Available in Red and Black.",
         images: [
