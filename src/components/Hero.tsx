@@ -17,16 +17,16 @@ const Hero: React.FC = () => (
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
-                <span className="text-xs font-medium text-slate-300">Accepting Bulk Orders</span>
+                <span className="text-xs font-medium text-slate-300">Wholesale & Bulk Manufacturing Available</span>
             </div>
 
             <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
-                Premium PVC & Leather <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">Manufacturing Experts</span>
+                PVC & Leather <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">Factory Wholesale</span>
             </h2>
 
             <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-                Direct from our factory in Vellore. We craft high-quality PVC Key Chains, Bike Stand Covers, and Leather Branding Materials for businesses across India.
+                Direct manufacturing from Melvisharam, Vellore. We supply premium PVC Key Chains, Bike Covers, and Branding Materials to <strong> Pan India</strong>.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
@@ -41,7 +41,7 @@ const Hero: React.FC = () => (
                     href="#contact"
                     className="bg-slate-800/50 backdrop-blur border border-slate-600 hover:bg-slate-700 text-white font-semibold py-3.5 px-8 rounded-xl transition-all flex items-center justify-center"
                 >
-                    Request a Quote
+                    Request Bulk Quote
                 </a>
             </div>
         </div>

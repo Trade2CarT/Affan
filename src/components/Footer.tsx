@@ -8,14 +8,13 @@ const Footer: React.FC = () => (
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div>
                 <div className="flex items-center space-x-2 mb-6">
-                    {/* Replaced Placeholder with Logo */}
                     <div className="w-12 h-auto">
                         <Logo className="w-full h-full" />
                     </div>
                     <h3 className="text-white text-xl font-bold">Affan Associates</h3>
                 </div>
                 <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Your trusted manufacturing partner for promotional PVC key chains, protective bike covers, and premium leather branding tags.
+                    Trusted Manufacturer in Melvisharam for promotional PVC key chains, protective bike covers, and leather branding tags.
                 </p>
                 <span className="inline-block text-xs font-mono bg-slate-800 border border-slate-700 px-3 py-1.5 rounded text-slate-400">
                     GST: 33ABGPZ3159C1ZN
@@ -25,7 +24,7 @@ const Footer: React.FC = () => (
             <div>
                 <h4 className="text-white font-bold mb-6 text-lg">Quick Links</h4>
                 <ul className="space-y-3 text-sm">
-                    {['Home', 'Product Catalog', 'About Manufacturing', 'Request Quote'].map((link, i) => (
+                    {['Home', 'PVC Products', 'Leather Branding', 'Contact Factory'].map((link, i) => (
                         <li key={i}><a href="#" className="hover:text-red-400 transition-colors flex items-center"><ChevronRight size={14} className="mr-2 text-slate-600" />{link}</a></li>
                     ))}
                 </ul>
@@ -43,6 +42,12 @@ const Footer: React.FC = () => (
                         <span className="text-white font-medium hover:text-red-400 cursor-pointer">+91 94430 18589</span>
                     </li>
                 </ul>
+                <div className="mt-6">
+                    <h5 className="text-white font-bold text-sm mb-2">Service Areas:</h5>
+                    <p className="text-xs text-slate-500 leading-relaxed">
+                        Vellore • Melvisharam • Arcot • Walaja • Arni • Ranipet • Pan India Delivery
+                    </p>
+                </div>
             </div>
 
             <div>
@@ -63,11 +68,7 @@ const Footer: React.FC = () => (
         </div>
 
         <div className="container mx-auto px-4 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-            <p>&copy; {new Date().getFullYear()} Affan Associates. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-white transition">Privacy Policy</a>
-                <a href="#" className="hover:text-white transition">Terms of Supply</a>
-            </div>
+            <p>&copy; {new Date().getFullYear()} Affan Associates. Best Manufacturer in Vellore District.</p>
         </div>
     </footer>
 );
